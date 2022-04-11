@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My portfolio</title>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<div class="first">
+			<div class="Left-side">
+				<div class="nav-link-wrapper active-nav-link">
+					<a href="index.html">Home</a>
+				</div>
+					<div class="nav-link-wrapper">
+						<a href="about.html">About me</a>
+					</div>
+				<div class="nav-link-wrapper">
+						<a href="contactme.html">Contact me</a>
+				</div>
+			</div>
+
+			<div class="Right side">
+				<div class="brand">
+					<div>Ikuerowo Damilare</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="welcome">
+		<div class="hobby">
+		<h2>Welcome to my hobby gallery<h2>
+		</div>
+		</div>
+		<div class="content-wrapper">
+			<div class="portfolio-items-wrapper">
+				
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(images/seaview.jpg)"></div>
+					 
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							 <img src="images/I Climb 2 (1).png">
+						</div>
+						<div class="subtitle">
+						I love viewing nature	
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(images/mountain.jpg)"></div>
+					 
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							 <img src="images/Fun & Free (1).png">
+						</div>
+						<div class="subtitle">
+						Glazing from the Sea can be fun	
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(images/oceanview.jpg)"></div>
+					 
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							 <img src="images/Fun & Free 2 (1).png">
+						</div>
+
+						<div class="subtitle">
+						Ocean view can be calming	
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(images/coding.jpg)"></div>
+					 
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							 <img src="images/Code beauty (1).png">
+						</div>
+
+						<div class="subtitle">
+						Improving my coding skills is what i do 	
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(images/gaming.jpg)"></div>
+					 
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							 <img src="images/Games (1).png">
+						</div>
+
+						<div class="subtitle">
+						Relaxing and having fun with animated object	
+						</div>
+					</div>
+				</div>
+
+				<div class="portfolio-item-wrapper">
+					<div class="portfolio-img-background" style="background-image:url(images/reading.jpg)"></div>
+					 
+					<div class="img-text-wrapper">
+						<div class="logo-wrapper">
+							 <img src="images/read (1).png">
+						</div>
+
+						<div class="subtitle">
+						Improving my mental capabilities	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	const portfolioItems = document.querySelectorAll ('.portfolio-item-wrapper')
+	portfolioItems.forEach(portfolioItem =>{
+		portfolioItem.addEventListener('mouseover', () =>{
+			portfolioItem.childNodes[1].classList.add('img-darken');
+		})
+
+		portfolioItem.addEventListener('mouseout', () =>{
+			console.log(portfolioItem.childNodes[1].classList); 
+			portfolioItem.childNodes[1].classList.remove('img-darken');
+		})
+	})
+</script>
+</script>
+</html>
