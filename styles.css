@@ -19,9 +19,16 @@ body {
 
 .first > .Left-side > div {
 	margin-right: 20px;
-	font-size: 0.9em;
+	font-size: 16px;
 	text-transform: uppercase;
 }
+
+.Right-side > .brand > div {
+	margin-right: 20px;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
 
 .nav-link-wrapper {
 	height: 22px;
